@@ -118,3 +118,5 @@ You are required to submit BOTH of the following for review:
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
     -Nested Arrays
     https://www.rithmschool.com/courses/intermediate-javascript/javascript-nested-data-structures-arrays
+    -InnerText
+    https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText

@@ -17,12 +17,15 @@ var randomQuestion, questionOn
 
 
 function gameStart(){
-    console.log("Game Started")
+    // console.log("Game Started")
     startButton.classList.add("hide")
     questionEl.classList.remove("hide")
     questionOn = 0
     randomQuestion = questions.sort(() => Math.random() - .5)
     nextGame()
+    var countdown = new Date ("october 31, 2020 18:38:48").getTime();
+    var timer = setInterval(function(){
+    }, 1000)
 }
 function nextGame(){
     questionShow(randomQuestion[questionOn])
@@ -30,12 +33,16 @@ function nextGame(){
 }
 function questionShow(question){
     allQuestions.innerText = question.question
-    console.log(question)
+    // console.log(question)
     question.answers.forEach(answer => {
-        if(answer.correct){
-            button.dataset.correct = answer.correct
+        var button = document.createElement("button")
+        button.innerText = answer.text
+        button.classList.add("btn")
+        if (answer.correct) {
+          button.dataset.correct = answer.correct
         }
         button.addEventListener("click", answerSelect)
+        answerButtonsElement.appendChild(button)
     });
 }
 
@@ -149,7 +156,14 @@ var questions = [
 
 
 
-
+// question.answers.forEach(answer => {
+//     if(answer.correct){
+//         var button = document.createElement("button")
+//         button.innerText = anwer.text
+//         button.dataset.correct = answer.correct
+//     }
+//     button.addEventListener("click", answerSelect)
+//     answerButtonsElement.appendChild(button)
 
 
 
