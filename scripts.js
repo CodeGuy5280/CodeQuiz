@@ -4,11 +4,16 @@
 // var timer = 
 // var timeRemaining
 
+
 var startButton = document.getElementById("start-button")
+var questionEl = document.getElementById("question-body")
     startButton.addEventListener('click', gameStart)
+
 function gameStart(){
-    // console.log("Game Started")
+    console.log("Game Started")
     startButton.classList.add("hide")
+    questionEl.classList.remove("hide")
+    nextQuestion()
 }
 function nextGame(){
 
@@ -17,6 +22,24 @@ function answerSelect(){
 
 }
 
+
+var questions = [
+    {
+    question: "What type of lure catches the most bass?",
+        answer: [
+            {text: "A soft plastic senko.", correct: true},
+            {text: "Crankbait", correct: false}
+        ]
+        },
+        {
+        question: "What type of fish like deep water 25ft+",
+        answer: [
+            {text:"Smallmouth bass", correct: true},
+            {text:"Trout", correct: false},
+        ]
+        ]
+    }
+]
 //var quiz will house questions 
 //var submit will push answer to app and progress to next question
 //^^ inner.html will clear the page and refresh

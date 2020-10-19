@@ -4,26 +4,10 @@
 
 ## Link: https://codeguy5280.github.io/CodeQuiz/
 
-# Resources for future projects:
+The purpose of this assignment is to show that I can create an app using html css and js together from scratch. Html has all of the basic outlines needed with buttons, classes & ids. The css has the buttons relocated, colored and resized.
+The js makes the buttons do something by adding eventListeners for on click commands by the user. The answers are stored in their own array to be pulled from more easily.
 
-    -Button Group
-    https://www.w3schools.com/howto/howto_css_button_group.asp
-    -Button Tag
-    https://www.w3schools.com/tags/tag_button.asp
-    -Basic CSS
-    https://www.w3schools.com/html/html_css.asp
-    -CSS Grid
-    https://www.w3schools.com/css/css_grid.asp
-    -List Grid View
-    https://www.w3schools.com/howto/howto_js_list_grid_view.asp
-    -CSS Grid Layout
-    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout
-    -CSS Visibility Property
-    https://www.w3schools.com/cssref/pr_class_visibility.asp
-    -CSS Selectors
-    https://www.w3schools.com/cssref/css_selectors.asp
-    -Javascript & Jquery textbook
-    Jon Duckett
+### Resources for future projects at bottom.
 
 ## Your Task
 
@@ -104,3 +88,29 @@ You are required to submit BOTH of the following for review:
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+### -Button Group
+
+    https://www.w3schools.com/howto/howto_css_button_group.asp
+    -Button Tag
+    https://www.w3schools.com/tags/tag_button.asp
+    -Basic CSS
+    https://www.w3schools.com/html/html_css.asp
+    -CSS Grid
+    https://www.w3schools.com/css/css_grid.asp
+    -List Grid View
+    https://www.w3schools.com/howto/howto_js_list_grid_view.asp
+    -CSS Grid Layout
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout
+    -CSS Visibility Property
+    https://www.w3schools.com/cssref/pr_class_visibility.asp
+    -CSS Selectors
+    https://www.w3schools.com/cssref/css_selectors.asp
+    -Javascript & Jquery textbook
+    Jon Duckett
+    -HTML DOM classList Property
+    https://www.w3schools.com/jsref/prop_element_classlist.asp
+    -Indexed Collections
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
+    -Nested Arrays
+    https://www.rithmschool.com/courses/intermediate-javascript/javascript-nested-data-structures-arrays
