@@ -5,4 +5,9 @@ h1 {
   color: white;
   text-align: center;
 }
+.quiz-body {
+  margin: auto;
+  color: black;
+}
+
 /*next change location of submit button with id = submit*/
