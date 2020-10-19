@@ -89,8 +89,9 @@ You are required to submit BOTH of the following for review:
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
-### -Button Group
+### Resources:
 
+    -Button Group
     https://www.w3schools.com/howto/howto_css_button_group.asp
     -Button Tag
     https://www.w3schools.com/tags/tag_button.asp
@@ -106,6 +107,9 @@ You are required to submit BOTH of the following for review:
     https://www.w3schools.com/cssref/pr_class_visibility.asp
     -CSS Selectors
     https://www.w3schools.com/cssref/css_selectors.asp
+    -View Height & Width (vh)
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_unit_vw
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_unit_vh
     -Javascript & Jquery textbook
     Jon Duckett
     -HTML DOM classList Property
