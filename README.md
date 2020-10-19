@@ -2,6 +2,8 @@
 
 # 04 Web APIs: Code Quiz
 
+## Link: https://codeguy5280.github.io/CodeQuiz/
+
 ## Your Task
 
 As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges.
@@ -31,12 +33,6 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 ```
-
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
 ## Grading Requirements
 
