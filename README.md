@@ -4,6 +4,27 @@
 
 ## Link: https://codeguy5280.github.io/CodeQuiz/
 
+# Resources for future projects:
+
+    -Button Group
+    https://www.w3schools.com/howto/howto_css_button_group.asp
+    -Button Tag
+    https://www.w3schools.com/tags/tag_button.asp
+    -Basic CSS
+    https://www.w3schools.com/html/html_css.asp
+    -CSS Grid
+    https://www.w3schools.com/css/css_grid.asp
+    -List Grid View
+    https://www.w3schools.com/howto/howto_js_list_grid_view.asp
+    -CSS Grid Layout
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout
+    -CSS Visibility Property
+    https://www.w3schools.com/cssref/pr_class_visibility.asp
+    -CSS Selectors
+    https://www.w3schools.com/cssref/css_selectors.asp
+    -Javascript & Jquery textbook
+    Jon Duckett
+
 ## Your Task
 
 As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges.

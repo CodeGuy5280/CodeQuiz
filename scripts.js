@@ -1,9 +1,21 @@
-var quiz = document.getElementbyId("quiz");
-var submit = document.getElementbyId("submit");
-var results = document.getElemtnbyId("results");
+// var quiz = document.getElementbyId("quiz");
+// var submit = document.getElementbyId("submit");
+// var results = document.getElemtnbyId("results");
 // var timer = 
 // var timeRemaining
 
+var startButton = document.getElementById("start-button")
+    startButton.addEventListener('click', gameStart)
+function gameStart(){
+    // console.log("Game Started")
+    startButton.classList.add("hide")
+}
+function nextGame(){
+
+}
+function answerSelect(){
+
+}
 
 //var quiz will house questions 
 //var submit will push answer to app and progress to next question

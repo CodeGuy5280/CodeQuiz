@@ -1,13 +1,66 @@
 body {
-  background-color: rgb(68, 64, 64);
+  background-color: rgb(39, 46, 78);
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100vh;
+}
+.container {
+  width: 800px;
+  max-width: 80%;
+  padding: 300px;
+}
+.btn-grid {
+  margin: 20px 0;
+  display: grid;
+  gap: 10px;
+}
+.btn {
+  padding: 8px 12px;
+  background-color: rgb(139, 55, 55);
+  color: white;
+}
+.start-button,
+.next-button {
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+
+/*Starter layout for styling html*/
+/* div {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 h1 {
   color: white;
   text-align: center;
 }
-.quiz-body {
-  margin: auto;
-  color: black;
+.start-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  box-sizing: border-box;
 }
+.btn {
+  background-color: rgb(24, 156, 189);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+#question {
+  color: white;
+  font-size: 30px;
+} */
 
 /*next change location of submit button with id = submit*/
