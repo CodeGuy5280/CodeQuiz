@@ -15,6 +15,10 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+.scene-buttons {
+  align-items: center;
+  display: flex;
+}
 .btn-grid {
   margin: 20px 0;
   display: grid;
