@@ -31,6 +31,12 @@ function nextGame(){
 function questionShow(question){
     allQuestions.innerText = question.question
     console.log(question)
+    question.answers.forEach(answer => {
+        if(answer.correct){
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener("click", answerSelect)
+    });
 }
 
 function answerSelect(){

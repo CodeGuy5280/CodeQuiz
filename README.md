@@ -5,7 +5,7 @@
 ## Link: https://codeguy5280.github.io/CodeQuiz/
 
 The purpose of this assignment is to show that I can create an app using html css and js together from scratch. Html has all of the basic outlines needed with buttons, classes & ids. The css has the buttons relocated, colored and resized.
-The js makes the buttons do something by adding eventListeners for on click commands by the user. The answers are stored in their own array to be pulled from more easily. The answer array is nested within the questions array.
+The js makes the buttons do something by adding eventListeners for on click commands by the user. The answers are stored in their own array to be pulled from more easily. The answer array is nested within the questions array. The answer arrays have objects within in the form of the text for the question along with the boolean for that question.
 
 ### Resources for future projects at bottom.
 
