@@ -7,17 +7,32 @@
 
 var startButton = document.getElementById("start-button")
 var questionEl = document.getElementById("question-body")
-    startButton.addEventListener('click', gameStart)
+var allQuestions = document.getElementById("question")
+var answersEl = document.getElementById("answer-buttons")    
+startButton.addEventListener('click', gameStart)
+
+
+var randomQuestion, questionOn
+
+
 
 function gameStart(){
     console.log("Game Started")
     startButton.classList.add("hide")
     questionEl.classList.remove("hide")
-    nextQuestion()
+    questionOn = 0
+    randomQuestion = questions.sort(() => Math.random() - .5)
+    nextGame()
 }
 function nextGame(){
+    questionShow(randomQuestion[questionOn])
 
 }
+function questionShow(question){
+    allQuestions.innerText = question.question
+    console.log(question)
+}
+
 function answerSelect(){
 
 }
@@ -33,13 +48,62 @@ var questions = [
         },
         {
         question: "What type of fish like deep water 25ft+",
-        answer: [
+            answer: [
             {text:"Smallmouth bass", correct: true},
             {text:"Trout", correct: false},
         ]
-        ]
-    }
+        },
+        {
+        question: "What type of rod & reel is commonly used for both bass and trout?",
+            answer: [
+                {text: "Spinning rod/reel", correct: true},
+                {text: "Baitcasting rod/reel", correct: false}
+            ]
+            },
+            {
+        question: "What type of knot is used for most Bass bait?",
+            answer: [
+                {text: "Polymer Knot", correct: true},
+                {text: "Winchester Knot", correct: false},
+                {text: "Monkey's Fist", correct: false},
+                {text: "Dropper Loop", correct: false}
+            ]
+            },
+            {
+        question: "What type of fish are the most fun to catch?",
+            answer: [
+                {text: "Bass", correct: true},
+                {text: "Any other fish.", correct: true}
+            ]
+        }
 ]
+
+
+
+
+
+
+
+//function for next question:
+// function next() {
+//     currentQuestion++;
+//        if (currentQuestion > questions.length - 1) {
+//         endGame();
+//         return;
+//     }
+//     var quizContent = "<h2>" + questions[currentQuestion].title + "</h2>"
+//     document.getElementById("quizBody").innerHTML = quizContent;
+
+
+
+
+
+
+
+
+
+
+
 //var quiz will house questions 
 //var submit will push answer to app and progress to next question
 //^^ inner.html will clear the page and refresh
@@ -96,12 +160,3 @@ var questions = [
 
 
 
-//function for next question
-// function next() {
-//     currentQuestion++;
-//        if (currentQuestion > questions.length - 1) {
-//         endGame();
-//         return;
-//     }
-//     var quizContent = "<h2>" + questions[currentQuestion].title + "</h2>"
-//     document.getElementById("quizBody").innerHTML = quizContent;
