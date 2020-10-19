@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(68, 64, 64);
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+/*next change location of submit button with id = submit*/
