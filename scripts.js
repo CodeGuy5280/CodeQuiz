@@ -20,29 +20,43 @@ function gameStart(){
     // console.log("Game Started")
     startButton.classList.add("hide")
     questionEl.classList.remove("hide")
-    questionOn = 0
+    
     randomQuestion = questions.sort(() => Math.random() - .5)
+    questionOn = 0
     nextGame()
-    var countdown = new Date ("october 31, 2020 18:38:48").getTime();
-    var timer = setInterval(function(){
-    }, 1000)
+    // var countdown;
+    // var timer = setInterval(function(){
+    // }, 1000)
 }
 function nextGame(){
     questionShow(randomQuestion[questionOn])
 
 }
+
+//Note that for whatever reason this code did not work.
+//I rewrote the code below and now it works....
+// question.answers.forEach(answer => {
+//     if(answer.correct){
+//         var button = document.createElement("button")
+//         button.innerText = anwer.text
+//         button.dataset.correct = answer.correct
+//     }
+//     button.addEventListener("click", answerSelect)
+//     answerButtonsElement.appendChild(button)
+
+
 function questionShow(question){
     allQuestions.innerText = question.question
     // console.log(question)
     question.answers.forEach(answer => {
-        var button = document.createElement("button")
+        const button = document.createElement("button")
         button.innerText = answer.text
         button.classList.add("btn")
         if (answer.correct) {
           button.dataset.correct = answer.correct
         }
         button.addEventListener("click", answerSelect)
-        answerButtonsElement.appendChild(button)
+        answersEl.appendChild(button)
     });
 }
 
@@ -53,29 +67,29 @@ function answerSelect(){
 
 var questions = [
     {
-    question: "What type of lure catches the most bass?",
-        answer: [
+        question: "What type of lure catches the most bass?",
+            answers: [
             {text: "A soft plastic senko.", correct: true},
             {text: "Crankbait", correct: false}
         ]
         },
         {
         question: "What type of fish like deep water 25ft+",
-            answer: [
+            answers: [
             {text:"Smallmouth bass", correct: true},
             {text:"Trout", correct: false},
         ]
         },
         {
         question: "What type of rod & reel is commonly used for both bass and trout?",
-            answer: [
+            answers: [
                 {text: "Spinning rod/reel", correct: true},
                 {text: "Baitcasting rod/reel", correct: false}
             ]
             },
             {
         question: "What type of knot is used for most Bass bait?",
-            answer: [
+            answers: [
                 {text: "Polymer Knot", correct: true},
                 {text: "Winchester Knot", correct: false},
                 {text: "Monkey's Fist", correct: false},
@@ -84,7 +98,7 @@ var questions = [
             },
             {
         question: "What type of fish are the most fun to catch?",
-            answer: [
+            answers: [
                 {text: "Bass", correct: true},
                 {text: "Any other fish.", correct: true}
             ]
@@ -156,14 +170,7 @@ var questions = [
 
 
 
-// question.answers.forEach(answer => {
-//     if(answer.correct){
-//         var button = document.createElement("button")
-//         button.innerText = anwer.text
-//         button.dataset.correct = answer.correct
-//     }
-//     button.addEventListener("click", answerSelect)
-//     answerButtonsElement.appendChild(button)
+
 
 
 
