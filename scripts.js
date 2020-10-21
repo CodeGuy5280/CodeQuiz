@@ -12,7 +12,8 @@ var answersEl = document.getElementById("answer-buttons")
 startButton.addEventListener('click', gameStart)
 
 
-var randomQuestion, questionOn
+var randomQuestion
+var questionOn = 0
 
 
 
@@ -22,13 +23,18 @@ function gameStart(){
     questionEl.classList.remove("hide")
     
     randomQuestion = questions.sort(() => Math.random() - .5)
-    questionOn = 0
+
     nextGame()
     // var countdown;
     // var timer = setInterval(function(){
     // }, 1000)
 }
 function nextGame(){
+    console.log(randomQuestion)
+    console.log(randomQuestion)
+    console.log(randomQuestion)
+    console.log(randomQuestion)
+
     questionShow(randomQuestion[questionOn])
 
 }
@@ -48,20 +54,40 @@ function nextGame(){
 function questionShow(question){
     allQuestions.innerText = question.question
     // console.log(question)
+
+    document.getElementById("answer-buttons").innerHTML = ""
+
     question.answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerText = answer.text
         button.classList.add("btn")
-        if (answer.correct) {
-          button.dataset.correct = answer.correct
-        }
+        button.dataset.correct = answer.correct
         button.addEventListener("click", answerSelect)
         answersEl.appendChild(button)
     });
 }
 
-function answerSelect(){
 
+
+//// NEXT STEPST TO FINISH
+
+// Get a timmer to display on the page, that done'st go away as you answer questions
+// Remove time from that timer, if data-correct is false (in the function below)
+// A function that runs when that timer hits 0 or they finish the quiz
+// allow the user to put in their initials use your hide class to hide it until the function runs
+// store initials w/ score in local storage
+
+
+function answerSelect(event){
+
+    // 1. We can correctly tell what the user Clicked and if it's correct.
+    // event.target.getAttribute("data-correct") <-- Returns true or false
+    // 2. Store that boolean
+    // 3. Generate the next question
+    // 4. If boolean is true or false => (Remove time from the timer) (setTime()/setInterval())
+    console.log(event.target.getAttribute("data-correct"))
+    questionOn += 1
+    nextGame()
 }
 
 
