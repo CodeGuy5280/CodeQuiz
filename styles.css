@@ -12,6 +12,10 @@ h1 {
   font-size: 20px;
   color: white;
 }
+h2 {
+  color: white;
+  font-size: 15px;
+}
 .container {
   width: 800px;
   max-width: 80%;

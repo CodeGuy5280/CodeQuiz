@@ -29,6 +29,34 @@ function gameStart(){
     // var timer = setInterval(function(){
     // }, 1000)
 }
+
+const quizTimer = document.getElementById("quiz-timer");
+var count = 30;
+startButton.addEventListener("click", function(){
+    setInterval(function (){
+        count-= 1;
+        quizTimer.textContent = count;
+    },1000);
+} )
+
+
+
+// if (gameStart === true){
+//     var count = 10;
+//     var interval = setInterval(function(){
+//       document.getElementById('count').innerHTML=count;
+//       count--;
+//       if (count === 0){
+//         clearInterval(interval);
+//         document.getElementById('count').innerHTML='Done';
+//         // or...
+//         alert("You're out of time!");
+//       }
+//     }, 1000);
+//     console.log(count)
+// }
+
+
 function nextGame(){
     console.log(randomQuestion)
     console.log(randomQuestion)
@@ -88,6 +116,8 @@ function answerSelect(event){
     console.log(event.target.getAttribute("data-correct"))
     questionOn += 1
     nextGame()
+    //not sure if setInterval() is necessary here
+    // setInterval()
 }
 
 
