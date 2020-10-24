@@ -4,34 +4,52 @@
 // var timer = 
 // var timeRemaining
 
-
+//vars 
 var startButton = document.getElementById("start-button")
 var questionEl = document.getElementById("question-body")
 var allQuestions = document.getElementById("question")
-var answersEl = document.getElementById("answer-buttons")    
+var answersEl = document.getElementById("answer-buttons")  
+var userName = document.querySelector("#username")
+var saveScoreBtn = document.querySelector("#saveScoreBtn")
+var finalScore = document.querySelector("#finalScore")
+//start btn
 startButton.addEventListener('click', gameStart)
+//highscore section
+var highscores = JSON.parse(localStorage.getItem("highScores")) || []
+var highscoreMax = 5
+// finalScore.innerText = 
+username.addEventListener("keyup", () => {
+    saveScoreBtn.disabled = !username.value
+})
+//do not allow auto refresh on selection
+saveHighScore = e => {
+    e.preventDefault()
+}
 
-
+//var for randomizing questions
 var randomQuestion
 var questionOn = 0
 
 
-
+//game begin
 function gameStart(){
     // console.log("Game Started")
     startButton.classList.add("hide")
     questionEl.classList.remove("hide")
     
     randomQuestion = questions.sort(() => Math.random() - .5)
-
+//next game function
     nextGame()
     // var countdown;
     // var timer = setInterval(function(){
     // }, 1000)
 }
-
+//Timer section
 const quizTimer = document.getElementById("quiz-timer");
 var count = 30;
+if (answerSelect === false){
+    count -= 5;
+}
 startButton.addEventListener("click", function(){
     setInterval(function (){
         count-= 1;
@@ -40,7 +58,7 @@ startButton.addEventListener("click", function(){
 } )
 
 
-
+//playing around with getting timer to start and end
 // if (gameStart === true){
 //     var count = 10;
 //     var interval = setInterval(function(){
@@ -56,7 +74,7 @@ startButton.addEventListener("click", function(){
 //     console.log(count)
 // }
 
-
+//next game console log to see objects for questions
 function nextGame(){
     console.log(randomQuestion)
     console.log(randomQuestion)
@@ -78,13 +96,13 @@ function nextGame(){
 //     button.addEventListener("click", answerSelect)
 //     answerButtonsElement.appendChild(button)
 
-
+//show and hide question w/ clear text on btn
 function questionShow(question){
     allQuestions.innerText = question.question
     // console.log(question)
 
     document.getElementById("answer-buttons").innerHTML = ""
-
+//answer function w/ onclick selection (btn)
     question.answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerText = answer.text
@@ -97,9 +115,9 @@ function questionShow(question){
 
 
 
-//// NEXT STEPST TO FINISH
+//// NEXT STEPS TO FINISH
 
-// Get a timmer to display on the page, that done'st go away as you answer questions
+// Get a timmer to display on the page, that doesn't go away as you answer questions
 // Remove time from that timer, if data-correct is false (in the function below)
 // A function that runs when that timer hits 0 or they finish the quiz
 // allow the user to put in their initials use your hide class to hide it until the function runs
@@ -120,7 +138,27 @@ function answerSelect(event){
     // setInterval()
 }
 
+//highscore Local Storage
+//   // save to localstorage
+//   highscores.push(newScore);
+//   window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
+//   // redirect to next page
+//   window.location.href = "highScore.html";
+
+// var score = 0;
+// for(var i = 0; i < questions.length; i++){
+//     var response = window.prompt(questions[i].prompt);
+//     if(response == quesions==questions[i].answer){
+//         score++;
+//         alert("Correct");
+//     }else{
+//         alert("Incorrect");
+//     }
+// }
+// alert("you got" + score + "/" + questions.length);
+
+//questions within an array, nested objects to pull from
 var questions = [
     {
         question: "What type of lure catches the most bass?",
@@ -156,37 +194,12 @@ var questions = [
         question: "What type of fish are the most fun to catch?",
             answers: [
                 {text: "Bass", correct: true},
-                {text: "Any other fish.", correct: true}
+                {text: "No fish is a bad fish.", correct: true}
             ]
         }
 ]
 
-
-
-
-
-
-
-//function for next question:
-// function next() {
-//     currentQuestion++;
-//        if (currentQuestion > questions.length - 1) {
-//         endGame();
-//         return;
-//     }
-//     var quizContent = "<h2>" + questions[currentQuestion].title + "</h2>"
-//     document.getElementById("quizBody").innerHTML = quizContent;
-
-
-
-
-
-
-
-
-
-
-
+//pseudoCode
 //var quiz will house questions 
 //var submit will push answer to app and progress to next question
 //^^ inner.html will clear the page and refresh
@@ -212,34 +225,3 @@ var questions = [
 // }else{
 
 // };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

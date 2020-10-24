@@ -9,6 +9,8 @@
 <header class="p-5 text-center text-white bg-primary">
     <h1>Do You Catch Mondos?</h1>
     <h2 id = "quiz-timer">30</h2>
+    <h3 id = "initialsId" class = "hide"></h3>
+    <h2>Highscores</h2>
   </header>
 <body>
     <div class="container">
@@ -19,6 +21,22 @@
                 <button class = "btn">Answer 2</button>
                 <button class = "btn">Answer 3</button>
                 <button class = "btn">Answer 4</button> -->
+                <!--End Screen Creation w/form to fill out initials-->
+                <div id="end" class = "endScreen">
+                    <h1 id="finalScore">0</h1>
+                    <form class="end-form-container">
+                        <h2 id="end-text">Enter Your Initials</h2>
+                        <input type="text" name="name" id="username"
+                        placeholder="Enter Your Initials">
+                        <button class="btn" id="saveScoreBtn"
+                        type = "submit" onclick="saveHighScore(event)"
+                        disabled>Save</button>
+                        <a href="./index.html" class="btn">Play Again</a>
+                        <!--buton for home screen/play again-->
+                        <!-- <a href="./index.html" class="btn">Play Again</a> -->
+                    </form>
+                </div>
+                </section>
             </div>
         </div>
 
