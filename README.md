@@ -120,3 +120,5 @@ You are required to submit BOTH of the following for review:
     https://www.rithmschool.com/courses/intermediate-javascript/javascript-nested-data-structures-arrays
     -InnerText
     https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
+    -Arrow Functions
+    https://www.w3schools.com/js/js_arrow_function.asp
