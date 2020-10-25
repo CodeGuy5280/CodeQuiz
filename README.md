@@ -91,6 +91,8 @@ You are required to submit BOTH of the following for review:
 
 ### Resources:
 
+    -Flex Box/ Flexible Box
+    https://www.w3schools.com/css/css3_flexbox.asp
     -Button Group
     https://www.w3schools.com/howto/howto_css_button_group.asp
     -Button Tag

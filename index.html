@@ -6,8 +6,41 @@
     <title>CodeQuiz</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<header class="p-5 text-center text-white bg-primary">
-    <h1>Do You Catch Mondos?</h1>
+    <!-- <div class = "container">
+        <div id = "home" class = "flex-center flex-column">
+            <h1>Do You Catch Mondos?</h1>
+            <a class = "btn" href="/quiz.html">Start</a>
+            <a class = "btn" href="/scorePage.html">Scores</a>
+
+        </div>
+    </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <header class="p-5 text-center text-white bg-primary"> -->
+     <h1>Do You Catch Mondos?</h1> -->
     <h2 id = "quiz-timer">30</h2>
     <h3 id = "initialsId" class = "hide"></h3>
     <h2>Highscores</h2>
@@ -17,12 +50,12 @@
         <div id = "question-body" class = "hide">
             <div id = "question">Question</div>
             <div id = "answer-buttons" class = "btn-grid">
-                <!-- <button class = "btn">Answer 1</button>
+                <button class = "btn">Answer 1</button>
                 <button class = "btn">Answer 2</button>
                 <button class = "btn">Answer 3</button>
-                <button class = "btn">Answer 4</button> -->
-                <!--End Screen Creation w/form to fill out initials-->
-                <div id="end" class = "endScreen">
+                <button class = "btn">Answer 4</button>
+                End Screen Creation w/form to fill out initials-->
+                 <div id="end" class = "endScreen">
                     <h1 id="finalScore">0</h1>
                     <form class="end-form-container">
                         <h2 id="end-text">Enter Your Initials</h2>
@@ -32,13 +65,13 @@
                         type = "submit" onclick="saveHighScore(event)"
                         disabled>Save</button>
                         <a href="./index.html" class="btn">Play Again</a>
-                        <!--buton for home screen/play again-->
-                        <!-- <a href="./index.html" class="btn">Play Again</a> -->
+                        buton for home screen/play again-->
+                        <a href="./index.html" class="btn">Play Again</a>
                     </form>
                 </div>
                 </section>
             </div>
-        </div>
+        </div> 
 
         <div class = "scene-buttons"></div>
         <button id = "start-button" class= "btn start-button">Start</button>
@@ -48,7 +81,7 @@
 <script src="./scripts.js">
     window.localStorage
     console.log(localStorage)
-</script>`
+ </script>`
 </body>
 </html>
 
