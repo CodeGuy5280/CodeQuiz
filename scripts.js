@@ -116,7 +116,6 @@ function questionShow(question){
 
 
 //// NEXT STEPS TO FINISH
-
 // Get a timmer to display on the page, that doesn't go away as you answer questions
 // Remove time from that timer, if data-correct is false (in the function below)
 // A function that runs when that timer hits 0 or they finish the quiz
