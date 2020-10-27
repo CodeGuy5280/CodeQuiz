@@ -71,6 +71,13 @@ input {
   font-size: 28px;
 }
 
+.end-form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+}
 /*Starter layout for styling html*/
 /* div {
   box-sizing: border-box;
