@@ -44,17 +44,44 @@ function gameStart(){
     // }, 1000)
 }
 //Timer section
-const quizTimer = document.getElementById("quiz-timer");
-var count = 30;
-if (answerSelect === false){
-    count -= 5;
-}
-startButton.addEventListener("click", function(){
-    setInterval(function (){
-        count-= 1;
-        quizTimer.textContent = count;
-    },1000);
-} )
+// const quizTimer = document.getElementById("quiz-timer");
+// var count = 30;
+// if (answerSelect === false){
+//     count -= 5;
+// }
+// startButton.addEventListener("click", function(){
+//     setInterval(function (){
+//         count-= 1;
+//         quizTimer.textContent = count;
+//     },1000);
+// } )
+
+
+//Final Timer
+// if (document.getElementById("start-button").clicked == true){
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+    
+    window.onload = function () {
+        var oneMinute = 60 * 1,
+            display = document.querySelector('#time');
+        startTimer(oneMinute, display);
+    };
+// }
 
 
 //playing around with getting timer to start and end
