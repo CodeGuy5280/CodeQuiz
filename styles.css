@@ -78,6 +78,15 @@ input {
   flex-direction: column;
   max-width: 800px;
 }
+#finalScore {
+  color: black;
+}
+#highScoreList {
+  font-size: ;
+}
+#highScore {
+  color: black;
+}
 /*Starter layout for styling html*/
 /* div {
   box-sizing: border-box;
