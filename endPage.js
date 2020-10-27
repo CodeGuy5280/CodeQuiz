@@ -1,4 +1,4 @@
-//Page for end screen/submission of initials
+//Page for end screen/submission of initials && highscores
 const username = document.querySelector("#username")
 const saveScoreBtn = document.querySelector("#saveScoreBtn")
 const finalScore = document.querySelector("#finalScore")
@@ -26,3 +26,10 @@ saveHighScore = e => {
     highScores.splice(5)
     localStorage.setItem("highscores", json.stringify(highScores))
 }
+
+const highScoreList = document.querySelector("#highScoreList")
+const highScores = JSON.parse(localStorage.getItem("highScores")) || []
+highScoreList.innerHTML = highScores.map(score=> {
+    return "<li class= 'high-score'>${score.name}-${score.score}</li>"
+}).join("")
+

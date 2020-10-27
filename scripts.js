@@ -1,7 +1,3 @@
-// var quiz = document.getElementbyId("quiz");
-// var submit = document.getElementbyId("submit");
-// var results = document.getElemtnbyId("results");
-// var timer = 
 
 //vars 
 var startButton = document.getElementById("start-button")
@@ -43,19 +39,6 @@ function gameStart(){
     // var timer = setInterval(function(){
     // }, 1000)
 }
-//Timer section
-// const quizTimer = document.getElementById("quiz-timer");
-// var count = 30;
-// if (answerSelect === false){
-//     count -= 5;
-// }
-// startButton.addEventListener("click", function(){
-//     setInterval(function (){
-//         count-= 1;
-//         quizTimer.textContent = count;
-//     },1000);
-// } )
-
 
 //Final Timer
 // if (document.getElementById("start-button").clicked == true){
@@ -84,21 +67,7 @@ function gameStart(){
 // }
 
 
-//playing around with getting timer to start and end
-// if (gameStart === true){
-//     var count = 10;
-//     var interval = setInterval(function(){
-//       document.getElementById('count').innerHTML=count;
-//       count--;
-//       if (count === 0){
-//         clearInterval(interval);
-//         document.getElementById('count').innerHTML='Done';
-//         // or...
-//         alert("You're out of time!");
-//       }
-//     }, 1000);
-//     console.log(count)
-// }
+
 
 //next game console log to see objects for questions
 function nextGame(){
@@ -111,7 +80,8 @@ function nextGame(){
 
 }
 
-//Note that for whatever reason this code did not work.
+//Note: 
+//For whatever reason this code did not work.
 //I rewrote the code below and now it works....
 // question.answers.forEach(answer => {
 //     if(answer.correct){
@@ -141,12 +111,6 @@ function questionShow(question){
 
 
 
-//// NEXT STEPS TO FINISH
-// Get a timmer to display on the page, that doesn't go away as you answer questions
-// Remove time from that timer, if data-correct is false (in the function below)
-// A function that runs when that timer hits 0 or they finish the quiz
-// allow the user to put in their initials use your hide class to hide it until the function runs
-// store initials w/ score in local storage
 
 
 function answerSelect(event){
@@ -163,25 +127,6 @@ function answerSelect(event){
     // setInterval()
 }
 
-//highscore Local Storage
-//   // save to localstorage
-//   highscores.push(newScore);
-//   window.localStorage.setItem("highscores", JSON.stringify(highscores));
-
-//   // redirect to next page
-//   window.location.href = "highScore.html";
-
-// var score = 0;
-// for(var i = 0; i < questions.length; i++){
-//     var response = window.prompt(questions[i].prompt);
-//     if(response == quesions==questions[i].answer){
-//         score++;
-//         alert("Correct");
-//     }else{
-//         alert("Incorrect");
-//     }
-// }
-// alert("you got" + score + "/" + questions.length);
 
 //questions within an array, nested objects to pull from
 var questions = [
@@ -223,6 +168,76 @@ var questions = [
             ]
         }
 ]
+
+//////////////////////////////////////////////
+/////////////////////////////////////////////
+////////////////////////////////////////////
+///////////////////////////////////////////
+//////////////////////////////////////////
+//Code that has changed
+//
+// var quiz = document.getElementbyId("quiz");
+// var submit = document.getElementbyId("submit");
+// var results = document.getElemtnbyId("results");
+// var timer = 
+//
+//// NEXT STEPS TO FINISH
+// Get a timmer to display on the page, that doesn't go away as you answer questions
+// Remove time from that timer, if data-correct is false (in the function below)
+// A function that runs when that timer hits 0 or they finish the quiz
+// allow the user to put in their initials use your hide class to hide it until the function runs
+// store initials w/ score in local storage
+//
+//Timer section
+// const quizTimer = document.getElementById("quiz-timer");
+// var count = 30;
+// if (answerSelect === false){
+//     count -= 5;
+// }
+// startButton.addEventListener("click", function(){
+//     setInterval(function (){
+//         count-= 1;
+//         quizTimer.textContent = count;
+//     },1000);
+// } )
+//
+//playing around with getting timer to start and end
+// if (gameStart === true){
+//     var count = 10;
+//     var interval = setInterval(function(){
+//       document.getElementById('count').innerHTML=count;
+//       count--;
+//       if (count === 0){
+//         clearInterval(interval);
+//         document.getElementById('count').innerHTML='Done';
+//         // or...
+//         alert("You're out of time!");
+//       }
+//     }, 1000);
+//     console.log(count)
+// }
+//
+//highscore Local Storage
+//   // save to localstorage
+//   highscores.push(newScore);
+//   window.localStorage.setItem("highscores", JSON.stringify(highscores));
+
+//   // redirect to next page
+//   window.location.href = "highScore.html";
+
+// var score = 0;
+// for(var i = 0; i < questions.length; i++){
+//     var response = window.prompt(questions[i].prompt);
+//     if(response == quesions==questions[i].answer){
+//         score++;
+//         alert("Correct");
+//     }else{
+//         alert("Incorrect");
+//     }
+// }
+// alert("you got" + score + "/" + questions.length);
+
+
 
 //pseudoCode
 //var quiz will house questions 
