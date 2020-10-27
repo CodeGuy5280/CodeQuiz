@@ -2,7 +2,6 @@
 // var submit = document.getElementbyId("submit");
 // var results = document.getElemtnbyId("results");
 // var timer = 
-// var timeRemaining
 
 //vars 
 var startButton = document.getElementById("start-button")
