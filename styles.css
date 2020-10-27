@@ -82,11 +82,12 @@ input {
   color: black;
 }
 #highScoreList {
-  font-size: ;
+  font-size: 15px;
 }
 #highScore {
   color: black;
 }
+
 /*Starter layout for styling html*/
 /* div {
   box-sizing: border-box;
